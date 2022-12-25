@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "wecatholic": {
+      "hosting": {
+        "app": [
+          "wecatholic"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "wecatholic"
+  }
+}

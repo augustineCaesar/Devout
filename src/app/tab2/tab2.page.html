@@ -1,17 +1,28 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+<ion-header class="ion-no-border" >
+  <ion-toolbar class="ion-no-border">
+    <ion-buttons slot="start">
+    </ion-buttons>
+    <ion-title>Posts</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="solid" shape="round" color="light">
+        <ion-icon slot="icon-only" name="share-outline" color="primary"></ion-icon>
+      </ion-button>
+      <ion-button fill="solid" shape="round" color="light">
+        <ion-icon slot="icon-only" name="search-outline" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" scrollEvents="true" [appParallax]="img">
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+	<div #img class="header-image" ></div>
+
+	<ion-header collapse="condense" class="ion-no-border">
+		<ion-toolbar color="light">
+			<ion-title size="large">example</ion-title>
+		</ion-toolbar>
+	</ion-header>
+
+  
 </ion-content>

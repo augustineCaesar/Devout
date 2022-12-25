@@ -1,0 +1,23 @@
+
+
+
+.form {
+    margin-top: 50% !important;
+    width: 90% !important;
+    margin-left: 5%;
+}
+.fitin {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center !important;
+    .box {
+        height: 100px;
+        width: 100px;
+    }
+}

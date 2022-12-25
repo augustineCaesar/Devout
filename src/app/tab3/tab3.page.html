@@ -7,11 +7,16 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-segment value="buttons">
+    
+    <ion-segment-button value="segment" (click)="getNT()">
+      <ion-label>Old Testament</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="buttons" (click)="getNT()">
+      <ion-label>New Testament</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  
 </ion-content>
+<!-- <img src="./../../assets/books/latinvulgate.json" alt="" srcset=""> -->

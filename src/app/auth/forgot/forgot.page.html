@@ -1,0 +1,37 @@
+
+
+<ion-content>
+
+  <form [formGroup]="credentials" (ngSubmit)="resetPasswordEmail()" class="form">
+
+
+
+    <ion-item class="ion-margin-botton">
+      
+    <div class="logo">
+      <div class="box"></div>
+      <img src="../../assets/icon/logo2.png">
+      <div class="box"></div>
+     
+    </div>
+
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" placeholder="email" formControlName="email"></ion-input>
+      <ion-note  *ngIf="(email.dirty || email.touched) &&  email.errors ">Email Invalid</ion-note>
+    </ion-item>
+
+    <ion-button expand="full" type="submit" [disabled]="!credentials.valid">Submit</ion-button>
+  </form> 
+
+<br> <br> 
+
+  <div class="fitin">
+    <ion-text color="primary">
+      <h5 routerLink="/create">create new account? </h5>
+    </ion-text>
+    <!-- <ion-text color="primary">
+      <h5 routerLink="/forgot">forgot password? </h5>
+    </ion-text> -->
+  </div>
+
+</ion-content>
